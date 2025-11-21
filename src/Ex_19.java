@@ -4,7 +4,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Ex_19 {
-//    Exercicio 19: Combine Predicate + Function para processar e filtrar lista.
+//    Exercicio 20: Simule um mini pipeline: filtrar, transformar e imprimir lista em uma linha.
 
 
 
@@ -16,7 +16,7 @@ public class Ex_19 {
 
         Function<Integer, Integer> plusTwo = n -> n + 2;
 
-        numeros.stream().filter(odd).map(plusTwo).toList().forEach(System.out::println);
+        numeros.stream().filter(odd).map(plusTwo).toList().forEach(n -> System.out.print(n + ", "));
 
 
 
