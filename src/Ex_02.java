@@ -11,6 +11,6 @@ public class Ex_02 {
 
         List<Integer> numeros = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 
-        numeros.stream().filter(isEven::test).collect(Collectors.toList()).forEach(System.out::println);
+        numeros.stream().filter(isEven).toList().forEach(System.out::println);
     }
 }
